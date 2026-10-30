@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #B39DDB;
+  --primary-light: #C5B3F0;
+  --yellow: #FFE388;
+  --yellow-text: #1F2121;
+  --green: #52B788;
+  --red: #FF7373;
+
+  /* Modo Claro */
+  --bg-color: #ffffff;
+  --text-color: #1F2121;
+  --text-muted: #6B7B7B;
+  --input-bg: #c5b3f050;
+  --border-color: #C5B3F0;
+  --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #222324;        
+  --text-color: #f4f4f5;      
+  --text-muted: #a1a1aa;      
+  --primary: #C5B3F0;         
+  --primary-light: #2e2e35;   
+  --yellow: #a79a62;          
+  --yellow-text: #1a1a1a; 
+  --input-bg: #635979e0;        
+  --border-color: #3f3f46;    
+  --card-bg: #27272a;
+  --green: #6BCB9A;
+  --red: #FF8A8A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.header-back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+}
+
+.event-card {
+  background-color: var(--yellow);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  color: var(--yellow-text);
+}
+
+.category-pill {
+  background-color: var(--yellow);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--yellow-text);
+  border: none;
+  cursor: pointer;
+}
